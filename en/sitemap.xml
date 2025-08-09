@@ -2,40 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://NgQuocTien22.github.io/WorkShop-NQT/en/</loc>
+    <loc>https://nguyentruong.github.io/en/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://NgQuocTien22.github.io/WorkShop-NQT/"
+                href="https://nguyentruong.github.io/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://NgQuocTien22.github.io/WorkShop-NQT/en/"
+                href="https://nguyentruong.github.io/en/"
                 />
   </url><url>
-    <loc>https://NgQuocTien22.github.io/WorkShop-NQT/en/categories/</loc>
+    <loc>https://nguyentruong.github.io/en/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://NgQuocTien22.github.io/WorkShop-NQT/categories/"
+                href="https://nguyentruong.github.io/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://NgQuocTien22.github.io/WorkShop-NQT/en/categories/"
+                href="https://nguyentruong.github.io/en/categories/"
                 />
   </url><url>
-    <loc>https://NgQuocTien22.github.io/WorkShop-NQT/en/tags/</loc>
+    <loc>https://nguyentruong.github.io/en/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://NgQuocTien22.github.io/WorkShop-NQT/tags/"
+                href="https://nguyentruong.github.io/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://NgQuocTien22.github.io/WorkShop-NQT/en/tags/"
+                href="https://nguyentruong.github.io/en/tags/"
                 />
   </url>
 </urlset>
