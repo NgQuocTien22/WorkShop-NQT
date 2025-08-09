@@ -2,71 +2,71 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://NgQuocTien22.github.io/WorkShop-NQT/</loc>
     <lastmod>2025-07-11T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/"
+                href="https://NgQuocTien22.github.io/WorkShop-NQT/en/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="http://localhost:1313/"
+                href="https://NgQuocTien22.github.io/WorkShop-NQT/"
                 />
   </url><url>
-    <loc>http://localhost:1313/1-introduce/</loc>
+    <loc>https://NgQuocTien22.github.io/WorkShop-NQT/1-introduce/</loc>
     <lastmod>2025-07-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/2-prerequiste/2.1-createiam/</loc>
+    <loc>https://NgQuocTien22.github.io/WorkShop-NQT/2-prerequiste/2.1-createiam/</loc>
     <lastmod>2025-07-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/2-prerequiste/</loc>
+    <loc>https://NgQuocTien22.github.io/WorkShop-NQT/2-prerequiste/</loc>
     <lastmod>2025-07-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/2-prerequiste/2.2-createvpc/</loc>
+    <loc>https://NgQuocTien22.github.io/WorkShop-NQT/2-prerequiste/2.2-createvpc/</loc>
     <lastmod>2025-07-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/3-directory/</loc>
+    <loc>https://NgQuocTien22.github.io/WorkShop-NQT/3-directory/</loc>
     <lastmod>2025-07-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/2-prerequiste/2.3-createsubnet/</loc>
+    <loc>https://NgQuocTien22.github.io/WorkShop-NQT/2-prerequiste/2.3-createsubnet/</loc>
     <lastmod>2025-07-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/2-prerequiste/2.4-createroutetable/</loc>
+    <loc>https://NgQuocTien22.github.io/WorkShop-NQT/2-prerequiste/2.4-createroutetable/</loc>
     <lastmod>2025-07-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/4-workspaces/</loc>
+    <loc>https://NgQuocTien22.github.io/WorkShop-NQT/4-workspaces/</loc>
     <lastmod>2025-07-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/5-securityperformance/</loc>
+    <loc>https://NgQuocTien22.github.io/WorkShop-NQT/5-securityperformance/</loc>
     <lastmod>2025-07-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/6-cleanup/</loc>
+    <loc>https://NgQuocTien22.github.io/WorkShop-NQT/6-cleanup/</loc>
     <lastmod>2024-07-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://NgQuocTien22.github.io/WorkShop-NQT/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/categories/"
+                href="https://NgQuocTien22.github.io/WorkShop-NQT/en/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="http://localhost:1313/categories/"
+                href="https://NgQuocTien22.github.io/WorkShop-NQT/categories/"
                 />
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://NgQuocTien22.github.io/WorkShop-NQT/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/tags/"
+                href="https://NgQuocTien22.github.io/WorkShop-NQT/en/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="http://localhost:1313/tags/"
+                href="https://NgQuocTien22.github.io/WorkShop-NQT/tags/"
                 />
   </url>
 </urlset>
