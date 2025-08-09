@@ -50,16 +50,16 @@ Sau đó bấm **Create**
 
 Trước đó hãy tiến hành tạo role có chứa **CloudTrail** trước
 Trong giao diện **AWS Console** truy cập vào **IAM**
-![iam](/images/2.prerequisite/006-Role.png)
+![iam](/images/2.prerequisite/006-role.png)
 
 Cấu hình như trong ảnh dưới đây 
-![iam](/images/2.prerequisite/007-Role.png)
+![iam](/images/2.prerequisite/007-role.png)
 
 Tìm và chọn policy giống ảnh 
-![iam](/images/2.prerequisite/008-Role.png)
+![iam](/images/2.prerequisite/008-role.png)
 
 Ở trang review hãy kiểm tra lại và bấm **Create Roles**
-![iam](/images/2.prerequisite/009-Role.png)
+![iam](/images/2.prerequisite/009-role.png)
 
 Sau đó quay lại CloudTrail -> Trail đã tạo 
 

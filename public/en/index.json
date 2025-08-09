@@ -1,20 +1,20 @@
 [
 {
-	"uri": "https://nguyentruong.github.io/en/",
+	"uri": "http://localhost:1313/en/",
 	"title": "AWS System Manager",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "https://nguyentruong.github.io/en/categories/",
+	"uri": "http://localhost:1313/en/categories/",
 	"title": "Categories",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "https://nguyentruong.github.io/en/tags/",
+	"uri": "http://localhost:1313/en/tags/",
 	"title": "Tags",
 	"tags": [],
 	"description": "",
