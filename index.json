@@ -1,0 +1,92 @@
+[
+{
+	"uri": "http://localhost:1313/",
+	"title": "Desktop Virtualization Migration với WorkSpaces",
+	"tags": [],
+	"description": "",
+	"content": "Xây dựng Desktop Virtualization Migration với WorkSpaces\tMigrate desktop infrastructure với user experience optimization, application compatibility, security, cost analysis. Tổng quan Trong bài lab này, bạn sẽ tìm hiểu các khái niệm cơ bản và thực hành về xây dựng Desktop Virtualization Migration với WorkSpaces.\nNội dung Giới thiệu Các bước chuẩn bị Tạo Directory Service Tạo WorkSpaces Tiến hành bảo mật và theo dõi hiệu suất Dọn dẹp tài nguyên "
+},
+{
+	"uri": "http://localhost:1313/1-introduce/",
+	"title": "Giới thiệu",
+	"tags": [],
+	"description": "",
+	"content": "Desktop Virtualization Migration với AWS WorkSpaces là quá trình chuyển đổi hạ tầng máy tính truyền thống sang một môi trường làm việc ảo hiện đại, linh hoạt, sử dụng nền tảng đám mây của AWS. Việc áp dụng AWS WorkSpaces giúp tổ chức đơn giản hóa việc quản lý thiết bị đầu cuối, tăng cường bảo mật, tối ưu chi phí và cải thiện trải nghiệm người dùng cuối.\nAWS WorkSpaces là một dịch vụ desktop ảo hóa được quản lý hoàn toàn (fully managed), cho phép triển khai nhanh chóng các môi trường máy tính cá nhân cho người dùng từ bất kỳ đâu, trên bất kỳ thiết bị nào. Với khả năng mở rộng linh hoạt, tính bảo mật cao và tích hợp sâu với các dịch vụ khác của AWS, WorkSpaces là giải pháp lý tưởng cho các doanh nghiệp muốn hiện đại hóa hạ tầng IT, giảm chi phí vận hành và nâng cao trải nghiệm người dùng.\nĐề tài tập trung vào quá trình triển khai mô hình Desktop-as-a-Service (DaaS) bằng cách sử dụng AWS WorkSpaces để cung cấp môi trường làm việc ảo hóa cho người dùng. Quá trình này bao gồm lập kế hoạch di chuyển, kiểm tra tính tương thích ứng dụng, tối ưu hóa trải nghiệm người dùng, thực hiện các biện pháp bảo mật, phân tích chi phí, thiết lập giám sát, xây dựng quy trình vận hành và đào tạo người dùng.\n"
+},
+{
+	"uri": "http://localhost:1313/2-prerequiste/2.1-createiam/",
+	"title": "Tạo IAM Role",
+	"tags": [],
+	"description": "",
+	"content": "Tạo IAM User để đảm bảo người vận hành có thể tạo, cấu hình, giám sát WorkSpaces Truy cập vào AWS Console tìm kiếm IAM Ở thanh task bên trái chọn User Sau đó bấm chọn Create User Tiến hành đặt tên và tích chọn vào Provide user access to the AWS Management Console Bạn có thể chọn tự tạo mật khẩu hoặc để AWS tự tạo cho bạn sau đó bấm Next Bạn sẽ được đưa tới giao diện setpermissions Chọn các lựa chọn như trong ảnh Chọn 5 permissions như sau\nAdministratorAccess AmazonWorkSpacesAdmin IAMReadOnlyAccess CloudWatchReadOnlyAccess AmazonSSMFullAccess sau đó bấm Next\nXem và kiểm tra kỹ các lựa chọn Sau khi thành công mà hình sẽ hiển thị như sau có thể chọn tải Download .csv file để lưu lại tài khoản\nSau đó copy link ở phần Console sign-in URL Sau đó tiến hành đăng nhập vào account được cung cấp và tiến hành đổi mật khẩu Sau khi đăng nhập thành công tiến hành các bước tiếp theo\n"
+},
+{
+	"uri": "http://localhost:1313/2-prerequiste/",
+	"title": "Các bước chuẩn bị",
+	"tags": [],
+	"description": "",
+	"content": "Nội dung Tạo IAM Role Tạo VPC Tạo Subnet Tạo Router Table "
+},
+{
+	"uri": "http://localhost:1313/2-prerequiste/2.2-createvpc/",
+	"title": "Tạo VPC",
+	"tags": [],
+	"description": "",
+	"content": "Tạo VPC Trong bước này chúng ta sẽ tiến hành cấu hình VPC cho WorkSpaces.\nTruy cập vào giao diện VPC Chọn YourVPC\nĐiền thông tin cho Vpc của bạn Cấu hình VPC IPv4 CIDR block là 10.0.0.0/16.\nIPv6 CIDR chọn No IPv6 CIDR block\nSau đó bấm create Vpc\n"
+},
+{
+	"uri": "http://localhost:1313/3-directory/",
+	"title": "Tạo Directory Service",
+	"tags": [],
+	"description": "",
+	"content": "Tạo Directory Service Ở thanh tìm kiếm của AWS Console search Directory Service\nỞ thanh task bên trái chọn Directories và bấm chọn Set up Directory\nChọn Simple AD ( phù hợp với dự án nhỏ và nội bộ) sau đó bấm Next Sau đó ở trang enter Directory Information nhập các thông tin cần thiết\nPhần Diretory size nên chọn Small vì sẽ phù hợp với dự án nhỏ\nSau khi đến trang Choose VPC and subnet\nChọn VPC và Subnet đã tạo Sau đó bấm Next Sau đó sẽ được chuyển tới trang review hãy kiểm tra lại các thông tin bạn đã điền sau đó bấm Create Directory\nSau khi bấm tạo phải chờ từ 15-30 phút để AWS triển khai AD hãy check status đến khi có chữ Active sẽ tiến hành bước tiếp theo Sau khi Status chuyển sang Active tiến hành Tạo người dùng “AdminUser” và gán quyền domain admin ( khi đăng nhập WorkSpaces sẽ có toàn quyền)\n"
+},
+{
+	"uri": "http://localhost:1313/2-prerequiste/2.3-createsubnet/",
+	"title": "Tạo Subnet",
+	"tags": [],
+	"description": "",
+	"content": "Tạo Subnet Truy cập vào VPC console\nỞ đây chúng ta tiến hành tạo 2 subnet\nỞ thanh task bên trái chọn subnet Chọn create subnet Trong phần tạo subnet chọn VPC mà bạn mới tạo sau đó bấm Create subnet Đến phần cấu hình cho subnet a chọn giống với ảnh dưới đây Sau đó bấm Create Subnet\nLặp lại các bước trên với subnet còn lại nhưng phải chú ý điền giống ảnh Sau khi tạo xong sẽ có 2 subnet như sau\n"
+},
+{
+	"uri": "http://localhost:1313/2-prerequiste/2.4-createroutetable/",
+	"title": "Tạo Router Table",
+	"tags": [],
+	"description": "",
+	"content": "Tạo Router Table Ở giao diện VPC ở thanh task bên trái chọn Router Table Bấm vào Create Table Cấu hình cho Router Table\nVPC chọn VPC mà bạn đã tạo Sau đó bấm Create Table\nSau khi tạo thành công màn hình sẽ hiển thị Ở bước này chúng ta tiến hành Internet Gateways cho router table\nỞ giao diện VPC chọn Internet Gateways Sau đó bấm Create Internet Gateways\nĐiền thông tin cho Internet Gateways\nSau khi điền thông tin cho Internet Gateways bấm Create Internet Gateways\nSau đó tiến hành Attack to VPC vào VPC đã tạo Chọn Action -\u0026gt; Attack to VPC Cấu hình cho Internet Gateways\nSau đó bấm Attack Internet Gateways Sau khi Attack thành công sẽ hiện như sau\n"
+},
+{
+	"uri": "http://localhost:1313/4-workspaces/",
+	"title": "Tạo WorkSpaces",
+	"tags": [],
+	"description": "",
+	"content": "Tạo WorkSpaces Trong AWS Console search WorkSpaces trên thanh tìm kiếm Ở thanh task bên trái\nBấm vào Directories Sau đó bấm Create Directory Chọn cấu hình như ảnh dưới đây\nSau đó bấm Register Sau khi đăng ký thành công đợi 1 lúc để AWS xử lý Trong giao diện WorkSpaces chọn Personal Sau đó chọn Create WorkSpaces Ở giao diện Onboading - optional Cấu hình như ảnh sau\nSau khi xong bấm Next\nBạn sẽ được đưa tới bước Configure WorkSpaces\nCấu hình như trong ảnh Sau đó bấm Next\nSẽ tới bước tiếp theo là Select Directory\nTiếp theo chúng ta sẽ cấu hình máy ảo Chọn Bundle (Gói cấu hình phần cứng + OS) Chọn bundle có tên: Performance with Windows 10 (Server 2022 based) Ví dụ cấu hình đi kèm: 2 vCPU, 8 GB RAM, Protocol: WSP, Có cài sẵn Mozilla Firefox, Ngôn ngữ: English. (Note: Nếu chưa có user thì bấm create user để tạo 1 user)\nSau đó bấm Next\nỞ bước cuối Customization kiểm tra lại các option đã chọn ( có thể sửa tùy theo nhu cầu) Sau đó bấm Create WorkSpaces Chờ 1 lúc AWS sẽ gửi cho bạn 1 mail có chứa thông tin đăng nhập và link đổi mật khẩu\nSau khi đổi mật khẩu xong tiến hành đăng nhập vào WorkSpaces\nNhập Code được gửi trong gmail Sau đó bấm Continue Sau đó bạn sẽ đăng nhập bằng tài khoản đã tạo Sau khi đăng nhập thành công bạn sẽ được đưa vào máy ảo Tiến hành kiểm tra xem đã có quyền Admin chưa\nMở Start menu Gõ và mở: Computer Management Vào Local Users and Groups → Groups Click vào Administrators Nếu thấy user TIENLAB\\adminuser có trong thì đã có đầy đủ quyền admin Sau đó tiến hành chạy thử trên môi trường máy ảo bằng cách kiểm tra kết nối internet và cài đặt thử các công cụ hỗ trợ học tập (Ở đây mình đã tải thử Visual Code)\nĐánh giá : Có thể thấy mạng và tốc độ khá ổn định có thể hỗ trợ công việc rất tốt.\n"
+},
+{
+	"uri": "http://localhost:1313/5-securityperformance/",
+	"title": "Tiến hành bảo mật và theo dõi hiệu suất",
+	"tags": [],
+	"description": "",
+	"content": "Tiến hành bảo mật và kiểm tra hiệu suất Trong giao diện của AWS Console search EC2. Ở thanh task bên trái tìm Sercurity Group Bấm Create Sercurity Group . Tích chọn vào Sercurity Groups đã gán cho WorkSpaces -\u0026gt; sau đó chọn Edit Inbound rules\nThêm các rules như sau:\nSau đó bấm Save Rules\nSau đó đến bước Enable CloudTrail để ghi log hoạt động. Trong giao diện AWS Console search CloudTrail Chọn Create a trail Tiến hành tạo Ở thanh tìm kiếm search CloudWatch ở thanh task bên trái chọn Logs -\u0026gt; Logs Group. Tiến hành thêm thông tin vào các ô yêu cầu Sau đó bấm Create\nTiến hành gán nó vào CloudTrail để ghi lại các sự kiện đăng nhập, cấu hình và hoạt động người dùng trên AWS WorkSpaces. Trước đó hãy tiến hành tạo role có chứa CloudTrail trước Trong giao diện AWS Console truy cập vào IAM Cấu hình như trong ảnh dưới đây Tìm và chọn policy giống ảnh Ở trang review hãy kiểm tra lại và bấm Create Roles Sau đó quay lại CloudTrail -\u0026gt; Trail đã tạo\nỞ phần CloudWatch Logs chọn Edit\nThiết lập cấu hình như ảnh -\u0026gt; Save Changes\nSau khi cấu hình xong nếu muốn kiểm tra hoạt động Truy cập vào CloudTrail ở thanh task bên trái chọn Event History Sau đó chọn các tab như sau để xem hoạt động Kiểm tra chi tiết các log gửi đến CloudWatch từ CloudTrail Vào giao diện CloudWatch chọn Log Group -\u0026gt; chọn Log Group đã tạo -\u0026gt; vào log stream để xem chi tiết. Đến với bước xem chi phí sử dụng Ở AWS Console search Billing and Cost Management home Ở thanh task bên trái chọn mục Bill Kéo và tìm mục Charge by Service Sẽ thấy các tài nguyên đã được sử dụng và đã được AWS tính phí sử dụng "
+},
+{
+	"uri": "http://localhost:1313/6-cleanup/",
+	"title": "Dọn dẹp tài nguyên  ",
+	"tags": [],
+	"description": "",
+	"content": "Chúng ta sẽ tiến hành các bước sau để xóa các tài nguyên chúng ta đã tạo trong bài thực hành này.\n1. Xóa AWS WorkSpaces Trong giao diện của AWS Console tìm WorkSpaces trong giao diện của WorkSpaces\nChọn Directory Tích chọn vào WorkSpaces đã tạo Chọn Action -\u0026gt; Remove WorkSpaces Đợi đến khi trạng thái chuyển từ Terminating -\u0026gt; Terminated Là đã hoàn thành bước xóa WorkSpaces.\n2. Xóa AWS Directory Service (Simple AD) Bước này tiếp tục khi WorkSpaces đã được xóa thành công\nTruy cập vào Directory Service\nChọn mục Directories Tích chọn vào directory đã tạo Chọn Action -\u0026gt; Delete Directory Chờ đợi vài phút để quá trình hoàn tất\n3. Xóa CloudTrail Truy cập vào CloudTrail Console\nChọn Trail WorkSpacesTrail (CloudTrail đã tạo). Nhấn Delete 4. Xóa CloudWatch Log Group Truy cập vào CloudWatch Console\nChọn Log Tích chọn vào LogGroup có tên WorkSpacesTrailLogs Chọn Action -\u0026gt; Delete log Group 5. Xóa S3 Bucket chứa CloudTrail logs Truy cập vào S3 Console\nTìm bucket tên bắt đầu bằng aws-cloudtrail-logs-\u0026hellip; Xóa tất cả objects bên trong trước, sau đó nhấn Delete bucket 6. Xóa VPC và các tài nguyên liên quan Trước tiên hãy Detach Internet Gateways Truy cập vào VPC ở thanh task bên trái chọn Internet Gateways Tích chọn vào Internet Gateways đã tạo -\u0026gt; chọn Actions -\u0026gt; Detach from VPC Chọn Actions -\u0026gt; Delete Internet gateways Xóa Router Table Vì đã xóa Internet Gateways trước đó nên vào Router Table để Remove Internet Gateways đã thêm trong mục Edit Router nếu không sẽ không xóa được Router Table\nChọn vào Router Table đã tạo -\u0026gt; Action -\u0026gt; Chọn Edit Router tìm tới mục có Target chứa Internet Gateways hãy Remove nó và bấm Save Changes Vẫn chọn vào Router Table đã tạo -\u0026gt; Action -\u0026gt; Chọn Edit subnet associations bỏ chọn 2 subnet đã tạo -\u0026gt; Bấm Save Changes Chọn Router Table đã tạo -\u0026gt; Chọn Delete Route Table Xóa Subnet Tích chọn vào 2 Subnet đã tạo -\u0026gt; Chọn Actions -\u0026gt; Delete Subnet\nXóa YourVPCs Tích chọn VPC đã tạo -\u0026gt; Chọn Actions -\u0026gt; Delete VPC\n"
+},
+{
+	"uri": "http://localhost:1313/categories/",
+	"title": "Categories",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "http://localhost:1313/tags/",
+	"title": "Tags",
+	"tags": [],
+	"description": "",
+	"content": ""
+}]
