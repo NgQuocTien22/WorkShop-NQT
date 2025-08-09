@@ -2,71 +2,71 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://nguyentruong.github.io/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2025-07-11T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://nguyentruong.github.io/en/"
+                href="http://localhost:1313/en/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://nguyentruong.github.io/"
+                href="http://localhost:1313/"
                 />
   </url><url>
-    <loc>https://nguyentruong.github.io/1-introduce/</loc>
+    <loc>http://localhost:1313/1-introduce/</loc>
     <lastmod>2025-07-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nguyentruong.github.io/2-prerequiste/2.1-createiam/</loc>
+    <loc>http://localhost:1313/2-prerequiste/2.1-createiam/</loc>
     <lastmod>2025-07-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nguyentruong.github.io/2-prerequiste/</loc>
+    <loc>http://localhost:1313/2-prerequiste/</loc>
     <lastmod>2025-07-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nguyentruong.github.io/2-prerequiste/2.2-createvpc/</loc>
+    <loc>http://localhost:1313/2-prerequiste/2.2-createvpc/</loc>
     <lastmod>2025-07-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nguyentruong.github.io/3-directory/</loc>
+    <loc>http://localhost:1313/3-directory/</loc>
     <lastmod>2025-07-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nguyentruong.github.io/2-prerequiste/2.3-createsubnet/</loc>
+    <loc>http://localhost:1313/2-prerequiste/2.3-createsubnet/</loc>
     <lastmod>2025-07-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nguyentruong.github.io/2-prerequiste/2.4-createroutetable/</loc>
+    <loc>http://localhost:1313/2-prerequiste/2.4-createroutetable/</loc>
     <lastmod>2025-07-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nguyentruong.github.io/4-workspaces/</loc>
+    <loc>http://localhost:1313/4-workspaces/</loc>
     <lastmod>2025-07-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nguyentruong.github.io/5-securityperformance/</loc>
+    <loc>http://localhost:1313/5-securityperformance/</loc>
     <lastmod>2025-07-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nguyentruong.github.io/6-cleanup/</loc>
+    <loc>http://localhost:1313/6-cleanup/</loc>
     <lastmod>2024-07-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nguyentruong.github.io/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://nguyentruong.github.io/en/categories/"
+                href="http://localhost:1313/en/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://nguyentruong.github.io/categories/"
+                href="http://localhost:1313/categories/"
                 />
   </url><url>
-    <loc>https://nguyentruong.github.io/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://nguyentruong.github.io/en/tags/"
+                href="http://localhost:1313/en/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://nguyentruong.github.io/tags/"
+                href="http://localhost:1313/tags/"
                 />
   </url>
 </urlset>
